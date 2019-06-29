@@ -1,0 +1,158 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #a4bab7;
+}
+h1 {
+    text-align: center;
+    color: #0b2027;
+}
+.data {
+    padding-top: 30px;
+    display: inline-block;
+    border-style: solid;
+    border-color: #e8e9f3;
+    box-shadow: 5px 10px #888888;
+    height: 400px;
+    width: 520px;
+    vertical-align: top;
+    margin-left: 50px;
+}
+.button {
+    position: absolute;
+    left: -200px;
+    top: 100px;
+    background-color: lightpink;
+    border: none;
+    box-shadow: 5px 5px #888888;
+    color: #5e6472;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    animation: slide 4s forwards;
+}
+@keyframes slide {
+    0%{opacity:0;}
+    25%{left: 270px;}
+    100% {
+        opacity: 1;
+        left: 270px;
+    }
+}
+.expbutton {
+    position: absolute;
+    top: 530px;
+    left: -130px;
+    background-color: lightpink;
+    border: none;
+    /* box-shadow: 5px 5px #888888; */
+    color: #5e6472;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.expbutton:hover{
+    left: 0px;
+}
+.butimg{
+    padding-left: 30px;
+    padding-right: 5px;
+    display: inline-block;
+}
+
+#issMap {
+    display: inline-block;
+    border-style: solid;
+    border-color: #e8e9f3;
+    box-shadow: 5px 10px #888888;
+    height: 430px;
+    width: 520px;
+    margin-left: 50px;
+}
+#tags {
+    margin-left: 20%;
+    display: inline-block;
+    color: #5e6472;
+    font-size: 30px;
+    animation: fadein 4s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.apidata {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.curtemp{
+    position: relative;
+    animation-name: tempslide;
+    animation-duration: 4s;
+}
+@keyframes tempslide{
+    0%{
+        top:-1000px;
+        opacity:0;
+    }
+    50%{
+        top:0px;
+    }
+    100%{
+        top:0px;
+        opacity:1;
+    }
+}
+
+.llexp{
+    position: absolute;
+    top: 220px;
+    left: 90px;
+    display: inline-block;
+    margin: auto;
+    padding: 10px;
+    border-style: solid;
+    border-color: #5e6472;
+    opacity: 0;
+    transition-duration: 2s;
+}
+.tempexp{
+    position: absolute;
+    top: 420px;
+    left: 150px;
+    display: inline-block;
+    margin: auto;
+    padding: 10px;
+    border-style: solid;
+    border-color: #5e6472;
+    opacity: 0;
+    transition-duration: 2s;
+}
+.mappexp{
+    position: absolute;
+    top: 540px;
+    left: 650px;
+    display: inline-block;
+    margin: auto;
+    padding: 10px;
+    border-style: solid;
+    border-color: #5e6472;
+    opacity: 0;
+    transition-duration: 2s;
+}
